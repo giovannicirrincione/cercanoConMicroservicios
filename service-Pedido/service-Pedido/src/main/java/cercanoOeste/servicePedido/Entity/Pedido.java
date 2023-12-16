@@ -1,9 +1,10 @@
 package cercanoOeste.servicePedido.Entity;
 
 import cercanoOeste.servicePedido.Enum.TipoEnvio;
-import jakarta.persistence.*;
+
 import lombok.*;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,15 +1,16 @@
 server:
   port: 8080
+
 spring:
-  security:
-      basic:
-        enabled: false
   cloud:
     config:
       server:
         git:
-          uri: http://github.com/giovannicirrincione/cercanoConMicroservicios.git
-          searchPath: config-data
+          uri: https://github.com/digitallab-academy/ms-course-youtube.git
+          searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-
+  security:
+    user:
+      name: root
+      password: s3cr3t
